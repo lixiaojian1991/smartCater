@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base href="/SmartCater/" />
+    <title>食材市场|智慧餐饮采购平台</title>
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+
+    <script src="js/jquery.min.js"></script>
+	<script src="ve.js"></script>
+	<script src="js/jquery.json-2.3.min.js"></script>
+	<script src="js/jquery.json-2.3.js"></script>
+	<script type="text/javascript">
+	var cVe= new EIO.ve();
+	var cVei = new EIO.vei();
+	var cVeUti = new EIO.veUti();
+	var cVeName="VeDemo1";//定义本应用的Ve引擎名称，用户自定义，用作服务按的消息处理调度
+	var cServerUri="EIOServletMsgEngine";
+	var cMsgConfigure;
+	</script>
+  </head>
+  
+  <body>
+  	<div class="container">
+        <div class="row">
+        	
+            <div class="col-md-9" style="background:#e0e0e0;width:73.7%">
+            <button id="isLogin" type="button" class="btn btn-primary">登录了么</button>
+            <button id="login" type="button" class="btn btn-primary">登录</button>
+            <button id="logout" type="button" class="btn btn-primary">退出登录</button>
+            <button id="test" type="button" class="btn btn-primary">测试功能</button>
+           </div>
+        </div>
+       
+       
+    </div>
+     <script src="js/test.js"></script>   
+  </body>
+</html>

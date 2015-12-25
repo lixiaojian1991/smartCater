@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <servlet>
+    <servlet-name>EIOServletMsgEngine</servlet-name>
+    <servlet-class>csAsc.EIO.MsgEngine.CEIOMsgRouter</servlet-class>
+    
+   <!-- 定义工程的的绝对路径  -->
+    <init-param>
+	  <param-name>ProjectPath</param-name>
+	  <param-value>F:\workspaces\.metadata\.me_tcat7\webapps\SmartCater</param-value>
+    </init-param>
+     
+    <!-- 定义该应用程序对应的配置文件名称 -->
+    <init-param>
+	 <param-name>AppConfigFile</param-name>
+	 <param-value>EIO.xml</param-value>
+    </init-param>
+	
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>EIOServletMsgEngine</servlet-name>
+    <url-pattern>/EIOServletMsgEngine</url-pattern> <!--该名为服务端HTTP请求的使用的服务端名称URI -->
+  </servlet-mapping>
+</web-app>

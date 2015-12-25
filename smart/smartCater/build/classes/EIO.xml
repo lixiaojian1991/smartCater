@@ -1,0 +1,35 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?> <VEMessageDesc><!—VE的消息描述，关联于ME的消息描述 -->
+<EIO>
+	<Application>
+		<!-- 定义消息中的标识消息类型的键标识符与值标识符 -->
+		<init-param>
+	  <param-name>VEReqMsgTypeId</param-name>
+	  <param-value>VEReqMsgType</param-value>
+    </init-param>
+    <init-param>
+	  <param-name>VEReqMsgNameId</param-name>
+	  <param-value>VEReqMsgName</param-value>
+    </init-param>
+    <init-param>
+	  <param-name>VEReqMsgHandleId</param-name>
+	  <param-value>VEReqMsgHandle</param-value>
+    </init-param>
+     <!-- 定义Ve的传输协议中标识VE的名称值的键标识符-->
+   <init-param>
+	  <param-name>VeNameId</param-name>
+	  <param-value>VeName</param-value>
+    </init-param>
+   <init-param>
+	  <param-name>IndividualizedInit</param-name>
+	  <param-value>csAsc.EIO.SysMsgHandle.SmartCaterInit.SmartCaterInit</param-value>
+    </init-param>
+    <init-param>
+	  <param-name>DatabaseConnection</param-name>
+	  <param-value>{
+	                "ECOSSmain":{"Driver":"com.mysql.jdbc.Driver","Server":"jdbc:mysql://localhost:3306","Databse":"smartcater", "User":"root", "Password":"root"},
+	                "MySQLTest":{"Driver":"com.mysql.jdbc.Driver","Server":"jdbc:mysql://localhost:3306","Databse":"smartcater", "User":"root", "Password":"root"} 
+	               }</param-value>
+    </init-param>
+	</Application>
+</EIO>
+
